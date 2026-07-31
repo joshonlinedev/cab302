@@ -14,7 +14,6 @@ public class Main {
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // consume newline
-
             switch (choice) {
                 case 1:
                     onRegister();
@@ -57,7 +56,7 @@ public class Main {
         }
         System.out.println("Welcome, " + user.getUsername() + "!");
         ToDoList toDoList = new ToDoList(user);
-        toDoList.run();   // starts the interactive to‑do list
+        toDoList.run();   // starts the interactive to-do list
         System.out.println("Returning to main menu.");
     }
 }
